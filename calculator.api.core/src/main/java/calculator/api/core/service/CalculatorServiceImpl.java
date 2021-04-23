@@ -12,8 +12,8 @@ import calculator.api.core.utils.OperatorFactory;
 public class CalculatorServiceImpl implements ICalculatorService {
 
 	@Override
-	public BigDecimal calculate(BigDecimal var1, BigDecimal var2, String operator) throws IllegalAccessException {
-		Operation operation = OperatorFactory.getOperation(Operator.valueOf(operator))
+	public BigDecimal calculate(BigDecimal var1, BigDecimal var2, Operator operator) throws IllegalAccessException {
+		Operation operation = OperatorFactory.getOperation(operator)
 				.orElseThrow(IllegalAccessException::new);
 
 		return operation.apply(var1, var2);
