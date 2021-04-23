@@ -2,7 +2,10 @@
 package calculator.api.core.model;
 
 import java.math.BigDecimal;
-
+/**
+ * @author Judiao Mbaua
+ *
+ */
 public class Subtraction
 	implements Operation
 {

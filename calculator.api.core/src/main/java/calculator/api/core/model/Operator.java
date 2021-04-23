@@ -1,5 +1,8 @@
 package calculator.api.core.model;
-
+/**
+ * @author Judiao Mbaua
+ *
+ */
 public enum Operator {
 ADD("add"),SUBTRACT("subtract"),MULTIPLY("multiply"),DEVIDE("devide");
 	

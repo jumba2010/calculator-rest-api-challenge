@@ -3,7 +3,10 @@ package calculator.api.core.service;
 import java.math.BigDecimal;
 
 import calculator.api.core.model.Operator;
-
+/**
+ * @author Judiao Mbaua
+ *
+ */
 public interface ICalculatorService
 {
 

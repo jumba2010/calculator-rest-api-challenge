@@ -10,7 +10,10 @@ import calculator.api.core.model.Operator;
 import calculator.api.core.model.Operation;
 import calculator.api.core.model.Multiplication;
 import calculator.api.core.model.Subtraction;
-
+/**
+ * @author Judiao Mbaua
+ *
+ */
 public abstract class OperatorFactory {
 
 	static final Map<Operator, Operation> operationMap = new HashMap<>();

@@ -7,7 +7,10 @@ import org.springframework.stereotype.Service;
 import calculator.api.core.model.Operator;
 import calculator.api.core.model.Operation;
 import calculator.api.core.utils.OperatorFactory;
-
+/**
+ * @author Judiao Mbaua
+ *
+ */
 @Service(ICalculatorService.NAME)
 public class CalculatorServiceImpl implements ICalculatorService {
 
