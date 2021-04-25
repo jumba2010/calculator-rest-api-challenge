@@ -11,6 +11,7 @@ import calculator.api.core.model.Operator;
 import calculator.api.core.service.ICalculatorService;
 
 /**
+ * Classe de consumo das mensagens que sao enviaas para a fila
  * @author Judiao Mbaua
  *
  */

@@ -1,4 +1,4 @@
-package calculator.api.rest.dto;
+package calculator.api.core.dto;
 
 import java.math.BigDecimal;
 
@@ -9,14 +9,28 @@ import javax.validation.constraints.NotNull;
  */
 public class OperationDTO {
 
-@NotNull
+@NotNull(message = "O valor de var1 é Obrigatório")
 private BigDecimal var1;
 
-@NotNull
+@NotNull(message = "O valor de var2 é Obrigatório")
 private BigDecimal var2;
 
-@NotNull
+@NotNull(message = "O valor do operador é Obrigatório")
 private String operator;
+
+private BigDecimal result;
+
+public OperationDTO(){
+	super();
+}
+
+public BigDecimal getResult() {
+	return result;
+}
+
+public void setResult(BigDecimal result) {
+	this.result = result;
+}
 
 public BigDecimal getVar1() {
 	return var1;

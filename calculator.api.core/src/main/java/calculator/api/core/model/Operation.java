@@ -3,6 +3,7 @@ package calculator.api.core.model;
 
 import java.math.BigDecimal;
 /**
+ * 
  * @author Judiao Mbaua
  *
  */

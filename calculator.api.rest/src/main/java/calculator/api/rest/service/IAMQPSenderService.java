@@ -1,8 +1,9 @@
 package calculator.api.rest.service;
 
+import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 
-import calculator.api.rest.dto.OperationDTO;
+import calculator.api.core.dto.OperationDTO;
 /**
  * @author Judiao Mbaua
  *
