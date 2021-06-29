@@ -1,6 +1,8 @@
 INTRODUCTION
 ------------
-This is a simple calculator rest api made with java and Spring boot.
+This is a simple calculator rest api made with java and Spring boot. It is constituted by two modules,
+
+that comunicates each asynchronously using Active AMQP
 
 REQUIREMENTS
 ------------
