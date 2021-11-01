@@ -12,6 +12,17 @@ This projects requires the following modules:
  * Rest (calculator.api.core)
 It requires jdk 8
 
+
+TECHNOLOGIES
+------------
+This projects uses the following technologies:
+
+ * java 8
+ * hibernate and JPA
+ * Spring 2.0 or higher
+ * Active AMQP
+ 
+
 MAINTAINERS
 -----------
 Current maintainers:
