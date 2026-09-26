@@ -41,6 +41,12 @@ public class CalculatorRestController {
 		if (Arrays.stream(operators).noneMatch(op->op.equals(operation.getOperator()))) {
 			throw new InvalidOperatorException("O operador informado é invalido");
 		}
+
+		// Fail fast at the edge: a division by zero would otherwise only fail inside the
+		// core consumer, leaving the caller waiting for a reply that never arrives.
+		if ("devide".equals(operation.getOperator()) && operation.getVar2().signum() == 0) {
+			throw new BusinessException("Divisão por zero não é permitida");
+		}
 		try {
 
 			return ResponseEntity.ok(amqpSenderService.sendAndReceiveResponse(operation));
